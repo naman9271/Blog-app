@@ -92,7 +92,7 @@ export default function CreatePost() {
       } else {
         router.push(`/posts/${result.post.slug}`);
       }
-    } catch (_error) {
+    } catch {
       setError('root', {
         type: 'manual',
         message: 'An error occurred. Please try again.'

@@ -144,7 +144,7 @@ export default function EditPost({ params }: { params: { slug: string } }) {
       } else {
         router.push(`/posts/${result.post.slug}`);
       }
-    } catch (_error) {
+    } catch {
       setError('root', {
         type: 'manual',
         message: 'An error occurred. Please try again.'

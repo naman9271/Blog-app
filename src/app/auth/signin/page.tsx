@@ -43,7 +43,7 @@ export default function SignIn() {
         router.push('/');
         router.refresh();
       }
-    } catch (_error) {
+    } catch{
       setError('root', {
         type: 'manual',
         message: 'An error occurred. Please try again.'
